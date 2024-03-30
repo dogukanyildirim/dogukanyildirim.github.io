@@ -1,0 +1,20 @@
+
+.icon,
+.icons i{
+    color: #1da1f2;
+}
+.privacy{
+    color: #1da1f2;
+    padding: 10px;
+    border-style: wave;
+    border-radius: 50px;
+}
+.privacy:hover{
+    cursor: pointer;
+    background-color: #e7f5fe;
+    transition: background-color 0.5s ease;
+}
+
+main{
+
+}

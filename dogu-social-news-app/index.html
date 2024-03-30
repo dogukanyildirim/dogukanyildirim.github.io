@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>social-media-app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+<main>
+    <div class="container">
+        <h3 class="title is-3 has-text-centered">social media ui app</h3>
+        <div class="media">
+            <figure class="media-left">
+
+                <p class="image is-64x64">
+                    <img class="has-radius-rounded" src="./images/avatars/2.jpg" alt=""/>
+                </p>
+
+            </figure>
+            <div class="media-content">
+                <div class="field">
+                    <p class="control">
+                        <label for="text-area">
+                            <textarea id="text-area" class="textarea" placeholder="what is happening?"></textarea>
+                        </label>
+                    </p>
+                </div>
+                <div class="field">
+                    <div class="is-display-flex is-align-items-center is-justify-content-space-between">
+                        <div class="privacy">
+                            <i class="fas fa-globe-asia"></i>
+                            <span class="ml-1">Everyone can reply</span>
+                        </div>
+                        <span><i id="counted-text">0</i><b> / 140</b></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="icons is-display-flex is-align-items-center is-justify-content-space-between">
+                    <div class="icons is-display-flex is-align-items-center is-column-gap-3.5">
+                        <i class="far fa-file-image"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="far fa-grin"></i>
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="is-display-flex is-align-items-center  ">
+                        <button id="share-btn" class="button is-info is-color-white is-pulled-right">share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="post" class="media">
+            <figure class="media-left">
+                <p class="image is-64x64">
+                    <img class="has-radius-rounded" src="./images/avatars/2.jpg" />
+                </p>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <strong>dogu</strong> <small>@doguthedev</small> <small>32m</small>
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare
+                        magna eros, eu pellentesque tortor vestibulum ut.
+                    </p>
+                </div>
+                <nav class="level is-mobile">
+                    <div class="level-left">
+                        <a class="level-item">
+                            <span class="icon"><i class="fas fa-reply"></i></span>
+                        </a>
+                        <a class="level-item">
+                            <span class="icon"><i class="fas fa-retweet"></i></span>
+                        </a>
+                        <a class="level-item">
+                            <span class="icon"><i class="fas fa-heart"></i></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="media-right">
+                <button class="delete"></button>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
