@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Inter";
+    font-display: swap;
+    src:
+        url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("opentype");
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.close-img-btn {
+    display: none;
+}
+
+main {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: hsl(233, 8%, 79%);
+}
+
+.flex-hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-hero img {
+    max-width: 100%;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text .flex-p {
+    width: 50%;
+}
+
+.hero-text .flex-p p {
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 3rem;
+}
+
+.hero-text .flex-heading h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.hero-text .flex-p button {
+    border: none;
+    outline: none;
+    padding: 16px 26px;
+    width: 11rem;
+    color: #fff;
+    background-color: hsl(5, 85%, 63%);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+
+.hero-sidenav {
+    margin-left: 20px;
+    background-color: hsl(240, 100%, 5%);
+    color: #fff;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.hero-sidenav .card {
+    margin-bottom: 2rem;
+}
+
+.hero-sidenav .card p {
+    color: hsl(233, 8%, 79%);
+    padding: 10px;
+}
+
+.hero-sidenav h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2.5rem;
+}
+
+.hero-sidenav .card h3,
+p {
+    margin: 0;
+}
+
+.cards {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.cards .image-con {
+    margin-right: 1rem;
+    align-items: center;
+}
+
+.cards .image-con img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+}
+
+.special-number {
+    color: hsl(233, 8%, 79%);
+    opacity: 0.5;
+    font-size: 2rem;
+    margin: 0 0 0.75rem 0;
+}
+
+.cards .card .section-text {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cards .card .section-text h4 {
+    margin: 0;
+    line-height: 1rem;
+}
